@@ -1,0 +1,12 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        style="@style/ParentLayoutFormStyle">
+
+    <LinearLayout style="@style/ChildLayoutFormStyle"
+                  android:padding="@dimen/default_padding_24">
+        <include android:id="@+id/etIdRef" layout="@layout/component_edittext"/>
+        <include android:id="@+id/etItemSample" layout="@layout/component_edittext"/>
+        <include android:id="@+id/spTipeSample" layout="@layout/component_spinner"/>
+        <include android:id="@+id/etNotes" layout="@layout/component_edittext"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:id="@+id/mainParentEditText"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_between_components"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7">
+
+        <TextView
+                android:id="@+id/labelEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_font_size_12"
+                android:textColor="@color/black"
+                android:text="Label"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/subParentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_margin_5"
+            android:paddingRight="@dimen/default_margin_5"
+            android:layout_weight="0.3"
+            android:background="@drawable/shape_edittext_unfocus">
+
+        <!--dummy view for disable auto focus when component other visible gone-->
+        <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="0px"
+                android:layout_height="0px"/>
+
+        <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:padding="@dimen/default_padding_5"
+                android:textSize="@dimen/default_font_size_12"
+                android:background="@null"
+                app:backgroundTint="@color/black"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        style="@style/ParentLayoutFormStyle">
+
+    <LinearLayout style="@style/ChildLayoutFormStyle">
+        <include android:id="@+id/etBarcode" layout="@layout/component_edittext_barcode"/>
+        <include android:id="@+id/etIdRef_ItemSample" layout="@layout/component_edittext_multi"/>
+        <include android:id="@+id/etPB_Vol" layout="@layout/component_edittext_multi"/>
+        <!--<include android:id="@+id/etProdBatch" layout="@layout/component_edittext"/>-->
+        <include android:id="@+id/etWIP" layout="@layout/component_edittext"/>
+        <!--<include android:id="@+id/etNamaMat" layout="@layout/component_edittext"/>-->
+        <!--lotnum di hide dulu-->
+        <include android:id="@+id/etLotNum" layout="@layout/component_edittext" android:visibility="gone"/>
+        <!--<include android:id="@+id/etVol" layout="@layout/component_edittext"/>-->
+        <include android:id="@+id/rvListAnalisa" layout="@layout/component_recycleview"/>
+        <include android:id="@+id/btProses" layout="@layout/component_button_multi"/>
+    </LinearLayout>
+</ScrollView>

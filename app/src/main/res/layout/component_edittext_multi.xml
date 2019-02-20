@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainParentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_between_components">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7">
+
+        <TextView
+                android:id="@+id/labelEditText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_font_size_12"
+                android:textColor="@color/black"
+                android:text="Label"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+                android:id="@+id/subParentEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/default_margin_5"
+                android:paddingRight="@dimen/default_margin_5"
+                android:layout_weight="0.5"
+                android:background="@drawable/shape_edittext_unfocus">
+
+            <!--dummy view for disable auto focus when component other visible gone-->
+            <LinearLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="0px"
+                    android:layout_height="0px"/>
+
+            <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"
+                    android:padding="@dimen/default_padding_5"
+                    android:textSize="@dimen/default_font_size_12"
+                    android:background="@null"
+                    app:backgroundTint="@color/black"/>
+        </RelativeLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_margin_16"
+                android:layout_weight="0.3">
+
+            <TextView
+                    android:id="@+id/labelEditText2"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/default_font_size_12"
+                    android:layout_marginRight="@dimen/default_margin_16"
+                    android:textColor="@color/black"
+                    android:text="Label"/>
+
+            <RelativeLayout
+                    android:id="@+id/subParentEditText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/default_margin_5"
+                    android:paddingRight="@dimen/default_margin_5"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/shape_edittext_unfocus">
+
+                <!--dummy view for disable auto focus when component other visible gone-->
+                <LinearLayout
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="0px"
+                        android:layout_height="0px"/>
+                <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:padding="@dimen/default_padding_5"
+                        android:textSize="@dimen/default_font_size_12"
+                        android:background="@null"
+                        app:backgroundTint="@color/black"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+1. On Failure cuma satu saja 
+2. Jadi satu saja untuk call scanner 
+3. jadi satu juga untuk yang ketika save convert resp by type
+4. Jadi satu untuk semuanya tapi menggunakan pass parameter type
+
+//yang belum dikerjakan//
+1. Tipe sample spinner ketika di analisa sample nilainya bisa bermacam2 tidak hanya double bisa string dll
+1.1 mengganti textbox bisa bermacam2
+2. SP untuk report analisa
+3. LOGIN dan UPDATE
+
+4. ada warna merah ketika tidak sesuai dengan standard di bagian resume
+
+
+Dear Pak Aris,
+
+Pak terdapat perbedaan response pada object data? nilai ketika save SP Oracle dengan save SP SQL
+
+pada url http://b2b.ultrajaya.co.id/safeapi/andro/simpanorc :
+
+{
+    "data": {
+        "response_code": "success",
+        "disp_msg": "Result Data berhasil disimpan",
+        "nilai": ""
+    },
+    "meta": {
+        "http_status": 200
+    }
+}
+
+dengan http://b2b.ultrajaya.co.id/safeapi/andro/ambil 
+
+{
+    "data": {
+        "response_code": "success",
+        "disp_msg": "Item Sample 170011351 Berhasil di Accept",
+        "nilai": {}
+    },
+    "meta": {
+        "http_status": 200
+    }
+}

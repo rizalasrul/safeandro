@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:id="@+id/cardViewMaterial"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="1dp"
+                                    android:orientation="vertical"
+                                    android:clickable="true"
+                                    card_view:cardCornerRadius="0dp"
+                                    card_view:cardElevation="0dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <!--HEADER Start-->
+        <!--penggunaannya di adapter selain index ke 0 visibility gone contoh di report Analisa adapter-->
+    <LinearLayout
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/default_padding_10"
+            android:paddingBottom="@dimen/default_padding_10"
+            android:padding="@dimen/default_padding_5"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_12"
+                    android:textStyle="bold"
+                    android:text="No."/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_5"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="50">
+
+                <TextView
+                        android:id="@+id/label1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/default_font_size_12"
+                        android:textStyle="bold"
+                        android:text="Label"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="50">
+
+                <TextView
+                        android:id="@+id/label2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/default_font_size_12"
+                        android:textStyle="bold"
+                        android:text="Label"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="50">
+
+                <TextView
+                        android:id="@+id/label3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/default_font_size_12"
+                        android:textAlignment="textEnd"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        android:text="Label"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--HEADER End-->
+
+    <!--CONTAINER Start-->
+    <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/default_padding_10"
+            android:paddingBottom="@dimen/default_padding_10"
+            android:padding="@dimen/default_padding_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <!--NUMBERING Start-->
+        <LinearLayout
+                android:id="@+id/layout_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tvNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_number"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_font_size_12"
+                    android:textStyle="bold"
+                    tools:text="1"/>
+        </LinearLayout>
+        <!--NUMBERING End-->
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_5"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="50">
+
+                <TextView
+                        android:id="@+id/tvKolom1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_font_size_12"
+                        tools:text="Aroma"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="50">
+
+                <TextView
+                        android:id="@+id/tvKolom2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_font_size_12"
+                        tools:text="Sedap"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_weight="50">
+
+                <TextView
+                        android:id="@+id/tvKolom3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/default_font_size_12"
+                        android:textAlignment="textEnd"
+                        tools:text="Coklat kemerahan dan sangat"
+                        android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--CONTAINER End-->
+    </LinearLayout>
+</android.support.v7.widget.CardView>

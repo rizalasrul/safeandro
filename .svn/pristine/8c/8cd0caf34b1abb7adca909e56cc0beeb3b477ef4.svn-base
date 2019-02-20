@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SAFEANDRO</string>
+    <string name="login_desc">PT. Ultrajaya Milk Industry &amp; Trading Company, Tbk \n IT Department - 2019</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">SELAMAT DATANG DI SAFEANDRO</string>
+    <string name="company_name">PT. Ultrajaya Milk Industry &amp; Trading Company</string>
+</resources>

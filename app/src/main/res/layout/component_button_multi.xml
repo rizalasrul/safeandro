@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_between_components">
+
+    <Button
+            android:id="@+id/button1"
+            android:clickable="true"
+            android:layout_weight="0.4"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:textSize="@dimen/default_font_size_12"
+            tools:text="LABEL"/>
+
+    <LinearLayout
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </LinearLayout>
+    <Button
+            android:id="@+id/button2"
+            android:clickable="true"
+            android:layout_weight="0.4"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:textSize="@dimen/default_font_size_12"
+            tools:text="LABEL"/>
+
+</LinearLayout>
